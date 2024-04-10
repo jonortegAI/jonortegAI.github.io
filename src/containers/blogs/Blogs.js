@@ -70,7 +70,7 @@ export default function Blogs() {
                       isDark={isDark}
                       blog={{
                         url: blog.url,
-                        image: blog.image,
+                        image: blog.photo,
                         title: blog.title,
                         description: blog.description
                       }}
@@ -85,6 +85,7 @@ export default function Blogs() {
                       blog={{
                         url: blog.link,
                         title: blog.title,
+                        image: blog.thumbnail, // You might need to adjust this if your property name is different
                         description: extractTextContent(blog.content)
                       }}
                     />

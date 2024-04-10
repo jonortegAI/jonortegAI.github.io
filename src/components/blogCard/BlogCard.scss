@@ -6,12 +6,40 @@
 
 .blog-container {
   border-radius: 10px;
-  color: $blogCardContainerColor;
   background-color: $lightBackground1;
   box-shadow: 0 0 36px $lightBoxShadow;
   cursor: pointer;
-  height: 200px;
+  display: flex;
+  flex-direction: column; // Stack items vertically
+  justify-content: space-between; // Distribute space
 }
+
+.blog-card {
+  display: flex;
+  flex-direction: column; // Layout children in a column
+  justify-content: space-between; // Add space between text and image
+  height: 100%; // Full height of container
+}
+
+.blog-text {
+  padding: 15px; // Adjust padding as needed
+  padding-top: 20px; // Add space between image and text
+  // Rest of your blog text styles
+}
+
+.blog-image-container {
+  // Adjustments to image container
+  width: 100%; // Full width
+  overflow: hidden; // Hide overflowing parts
+}
+
+.blog-image {
+  padding-top: 20px;
+  width: 100%; // Full width
+  object-fit: contain; // Adjusts the size of the image within its container
+  margin-top: auto; // Push image to the bottom
+}
+
 
 .blog-title {
   color: $blogCardTitleColor;

@@ -4,6 +4,15 @@
 
 import emoji from "react-easy-emoji";
 import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
+import waixoLogo from "./assets/images/waixoLogo.png";
+import las_present from "./assets/images/las_present.PNG";
+import speaker_aiedutalks from "./assets/images/speaker_aiedutalks.jfif";
+import sleeptile_sope from "./assets/images/sleeptile_sope.jpg";
+import aiedutechLogo from "./assets/images/aiedutechLogo.jfif";
+import gaiaLogo from "./assets/images/gaiaLogo.png";
+import clickersLogo from "./assets/images/clickersLogo.png";
+import cerebros from "./assets/images/cerebros.PNG";
+import lookiero from "./assets/images/lookiero.jfif";
 
 // Splash Screen
 
@@ -46,8 +55,8 @@ const socialMediaLinks = {
 // Skills Section
 
 const skillsSection = {
-  title: "What I do",
-  subTitle: "BUILDING COOL STUFF WITH DATA AND AI",
+  title: "Technologies",
+  subTitle: "Already worked with...",
   skills: [
     emoji("⚡ Analyze data and create models to solve real-world problems"),
     emoji("⚡ Create and deploy Generative AI models"),
@@ -58,30 +67,44 @@ const skillsSection = {
 https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
-    {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
-    },
-    {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
-    },
-    {
-      skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
-    },
-    {
-      skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database"
-    },
-    {
-      skillName: "aws",
-      fontAwesomeClassname: "fab fa-aws"
-    },
-    {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
-    }
+  // Programación y Bases de Datos
+  { skillName: "Python", fontAwesomeClassname: "fab fa-python" },
+  { skillName: "R", fontAwesomeClassname: "fab fa-r-project" },
+  { skillName: "MySQL", fontAwesomeClassname: "fas fa-database" },
+  { skillName: "MongoDB", fontAwesomeClassname: "fas fa-leaf" },
+  { skillName: "HTML 5", fontAwesomeClassname: "fab fa-html5" },
+  { skillName: "CSS 3", fontAwesomeClassname: "fab fa-css3-alt" },
+  { skillName: "JavaScript", fontAwesomeClassname: "fab fa-js" },
+  { skillName: "Bootstrap", fontAwesomeClassname: "fab fa-bootstrap" },
+  { skillName: "Flask", fontAwesomeClassname: "fas fa-laptop" },
+  { skillName: "VS Code", fontAwesomeClassname: "fas fa-code" },
+
+  // Big Data
+  { skillName: "AWS", fontAwesomeClassname: "fab fa-aws" },
+  { skillName: "Hadoop", fontAwesomeClassname: "fas fa-hdd" },
+  { skillName: "Spark", fontAwesomeClassname: "fas fa-bolt" },
+  { skillName: "Elasticsearch", fontAwesomeClassname: "fas fa-search" },
+
+  // Aprendizaje Automático Avanzado, MLOps, Aprendizaje Profundo e IA
+  { skillName: "TensorFlow", fontAwesomeClassname: "fas fa-brain" },
+  { skillName: "PyTorch", fontAwesomeClassname: "fas fa-fire" },
+  { skillName: "Computer Vision", fontAwesomeClassname: "fas fa-eye" },
+  { skillName: "Neural Networks", fontAwesomeClassname: "fas fa-network-wired" },
+  { skillName: "GNNs", fontAwesomeClassname: "fas fa-project-diagram" },
+  
+  // NLP
+  { skillName: "BERT", fontAwesomeClassname: "fas fa-language" },
+  { skillName: "OpenAI API", fontAwesomeClassname: "fas fa-robot" },
+  { skillName: "Langchain", fontAwesomeClassname: "fas fa-link" },
+  { skillName: "Stable Diffusion", fontAwesomeClassname: "fas fa-image" },
+  { skillName: "Dall-E", fontAwesomeClassname: "fas fa-magic" },
+  { skillName: "Krea AI", fontAwesomeClassname: "fas fa-paint-brush" },
+
+  // Herramientas de Colaboración y Metodologías Ágiles
+  { skillName: "Git", fontAwesomeClassname: "fab fa-git" },
+  { skillName: "GitHub", fontAwesomeClassname: "fab fa-github" },
+  { skillName: "Trello", fontAwesomeClassname: "fab fa-trello" },
+  { skillName: "Azure DevOps", fontAwesomeClassname: "fas fa-cloud" },
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -97,10 +120,10 @@ const techStack = {
     },
     {
       Stack: "Generative AI",
-      progressPercentage: "70%"
+      progressPercentage: "80%"
     },
     {
-      Stack: "Programming",
+      Stack: "Educational Technologies",
       progressPercentage: "70%"
     }
   ],
@@ -142,39 +165,38 @@ const workExperiences = {
     {
       role: "Data Scientist and Generative AI Leader",
       company: "We Are Clickers",
-      companylogo: "./assets/images/clickersLogo.png",
+      companylogo: clickersLogo,
       date: "September 2023 – Present",
       desc: "Freelance role as a Data Scientist and Generative AI Leader, contributing to various projects.",
       descBullets: [
-        "Specialized in data analysis and generative AI applications.",
+        "Specialized in Data Analysis and Generative AI applications (GPT-4.5, StableDiffusion, Dall-E...)",
         "Worked across multiple domains to deliver AI-driven solutions.",
         "Fine-tuned models to improve performance and accuracy.",
-        "Used Generative AI models such as OpenAI's GPT-4.5, StableDiffusion, Dall-E, and others."
       ]
     },
     {
       role: "Co-founder & CTO",
       company: "AIEDUTECH",
-      companylogo: "./assets/images/aiedutechLogo.jfif",
+      companylogo: aiedutechLogo,
       date: "January 2023 – Present",
       desc: "Co-founder and CTO at AIEDUTECH, focusing on data science and generative AI leadership.",
       descBullets: [
         "Involved in strategic planning and technology leadership.",
-        "Focused on leveraging AI for educational technology solutions.",
-        "Developed and deployed AI models for educational technology products.",
-        "Led the development of AI-driven products."
+        "Trained teachers from +100 schools on AI and Educational Technology.",
+        "Led the development of AI models for educational technology products.",
+        "Created a platform that uses AI to track, analyze, and improve student feedback.",
       ]
     },
     {
       role: "Lead Data Scientist & Generative AI Partner",
       company: "GAIA Consulting",
-      companylogo: "./assets/images/gaiaLogo.png", // Asumiendo que tienes el logo como un archivo local
+      companylogo: gaiaLogo,
       date: "May 2023 – March 2024",
       desc: "Participated in AI-driven data transformation pipelines, digital transformation through AI, and advanced content analysis techniques.",
       descBullets: [
         "Crafted and deployed advanced pipelines, reducing data processing times by 54%.",
-        "Integrated AI tools such as Sentiment Analysis, Topic Modeling.",
-        "Deployed NLP and OpenAI API to group opinions into clusters, reducing manual data sorting by 75%."
+        "Integrated AI tools such as Sentiment Analysis, Topic Modeling...",
+        "Deployed NLP and OpenAI API to group opinions into clusters, reducing manual data sorting by 75%.",
       ]
     }
   ]
@@ -191,46 +213,53 @@ const openSource = {
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Big Projects",
+  title: "Main Projects",
   subtitle:
-    "SOME STARTUPS AND COMPANIES THAT I HELPED WITH THEIR TECH, DATA AND AI STRATEGIES",
+    "SOME STARTUPS AND COMPANIES THAT I HELPED WITH THEIR TECH, DATA AND AI STRATEGIES 🚀",
   projects: [
     {
-      image: "./assets/images/waixoLogo.png",
-      projectName: "Waixo rapports",
+      image: waixoLogo,
+      projectName: "Generating rapports with AI",
       projectDesc:
-        "Creating cloth rapports from an image using Stable Diffusion and Dall-E for inpainting of empty spaces.",
-      footerLink: [{name: "View Project", url: "https://waixo.example.com/"}]
+        "Creating cloth rapports from an image following a patent of geometrical calculations to create the rapport and Stable Diffusion and Dall-E for inpainting the empty spaces.",
+      footerLink: [{name: "View Project", url: "https://iapattern.waixo.com/en/"}]
     },
     {
-      image: "./assets/images/clickersLogo.png",
-      projectName: "FactorIA",
-      projectDesc:
-        "SaaS platform integrating langchain and OpenAI API to turn all your invoices into a simple excel sheet.",
-      footerLink: [{name: "View Project", url: "https://factoria.example.com/"}]
-    },
-    {
-      image: "./assets/images/curriculumns.jfif",
+      image: clickersLogo,
       projectName: "Curriculum matching",
       projectDesc:
-        "Utilizing NLP, BERT fine-tuning, and cosine similarity for a model that selects the best candidates for a job offer.",
-      footerLink: [{name: "View Project", url: "https://iddtek.example.com/"}]
+        "Utilizing NLP, BERT fine-tuning, and cosine similarity for a model that selects the best candidates for a job offer, given his curriculum, interview audio and Linkedin data.",
+      footerLink: [{name: "View Project", url: "https://drive.google.com/file/d/1sWgUuOH43cXe5-y0fj57zhRsm_-dac-E/view?usp=sharing"}]
     },
     {
-      image: "./assets/images/lookiero.jfif",
+      image: aiedutechLogo,
+      projectName: "AI-powered Student Feedback Optimizer",
+      projectDesc:
+        "Developing an AI tool that uses NLP and Generative AI to track, analyze, and improve student feedback, providing teachers with actionable insights and interesting recommendations.",
+      footerLink: [{name: "View Project", url: "https://drive.google.com/file/d/1hRTK_T_eX_CmFhyOkASXUuY1rPpbCnHq/view?usp=sharing"}]
+    },
+    {
+      image: lookiero,
       projectName: "Lookiero looks",
       projectDesc:
-        "Implementing Graph Neural Networks (GNNs) to create looks of three clothing items.",
-      footerLink: [{name: "View Project", url: "https://lookiero.example.com/"}]
+        "Implementing Graph Neural Networks (GNNs) to create looks of three clothing items. Graph-based analysis and prediction, UX redesign proposals...",
+      footerLink: [{name: "View Project", url: "https://drive.google.com/file/d/1jC45Ugk707OSdEc2lF7yIlIkbh5xkTrd/view?usp=sharing"}]
     },
     {
-      image: "./assets/images/cerebros.PNG",
+      image: clickersLogo,
+      projectName: "Factor-IA",
+      projectDesc:
+      "SaaS platform integrating Langchain and OpenAI API to turn all your invoices into a simple Excel sheet.",
+      footerLink: [{name: "View Project", url: "https://drive.google.com/file/d/1tuG3BBYgBp5xXO00onJL5PeS-VbxezWr/view?usp=sharing"}]
+    },
+    {
+      image: cerebros,
       projectName: "Brain Tumor Classification",
       projectDesc:
-        "Applying transfer learning with Vision Transformer (ViT) to classify brain tumors.",
+        "Applying Transfer Learning with VGG16, EfficientNet V2 B0, Vision Transformer (ViT) to classify brain tumors in 7 classes, achieving a 94% accuracy.",
       footerLink: [
         // Este enlace es hipotético; reemplázalo con un enlace real si el proyecto lo tiene
-        {name: "View Project", url: ""}
+        {name: "View Project", url: "https://drive.google.com/file/d/1w_C7ZVBIeKF_5Pbad_GKJUvctaHgicNZ/view?usp=sharing"}
       ]
     }
   ],
@@ -243,7 +272,7 @@ const bigProjects = {
 const achievementSection = {
   title: emoji("Achievements And Certifications 🏆 "),
   subtitle:
-    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
+    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done! 🏅",
 
   achievementsCards: [
     {
@@ -295,29 +324,45 @@ const achievementSection = {
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Blogs Section
 
 const blogSection = {
-  title: "Blogs",
+  title: "Some Posts",
   subtitle:
-    "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
-  displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
+    "I love to share my experiences and learnings in LinkedIn. Here are some of my posts! 📝",
+  displayMediumBlogs: "false", // Set true to display fetched medium blogs instead of hardcoded ones
   blogs: [
     {
-      url: "https://blog.usejournal.com/create-a-google-assistant-action-and-win-a-google-t-shirt-and-cloud-credits-4a8d86d76eae",
-      title: "Win a Google Assistant Tshirt and $200 in Google Cloud Credits",
+      url: "https://www.linkedin.com/posts/jon-ortega-uzquiaga-598a40212_reflecting-on-my-recent-experience-as-a-visiting-activity-7105500267139211264-X-4W?utm_source=share&utm_medium=member_desktop",
+      title: "Visiting Scholar at Leysin American School in Switzerland",
       description:
-        "Do you want to win $200 and Google Assistant Tshirt by creating a Google Assistant Action in less then 30 min?"
+        "Reflecting on my recent experience as a Visiting Scholar, where I debated with teachers and head of school about the future of AI and its impact on society.💡",
+      photo: las_present
     },
     {
-      url: "https://medium.com/@saadpasta/why-react-is-the-best-5a97563f423e",
-      title: "Why REACT is The Best?",
+      url: "https://www.linkedin.com/posts/jon-ortega-uzquiaga-598a40212_aiedutalks-aiedutech-activity-7047493816240476160-BCpq?utm_source=share&utm_medium=member_desktop",
+      title: "AIEDUtalks event: the future of AI in Education",
       description:
-        "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
-    }
+        "From when I was speaker in the AIEDUtalks event, where we reflected on use cases of AI in Education with Philippa Hardman, Cambridge University professor.💎",
+      photo: speaker_aiedutalks
+    },
+    {
+      url: "https://www.linkedin.com/posts/jon-ortega-uzquiaga-598a40212_some-weeks-ago-i-had-the-opportunity-to-present-activity-7004402509997850624-ZGKK?utm_source=share&utm_medium=member_desktop",
+      title: "Winning with Sleeptile",
+      description:
+        "From when I pitched Sleeptile in one of the many competitions we've been in.⚡",
+      photo: sleeptile_sope
+    },
+    // {
+    //   url: "https://www.linkedin.com/posts/jon-ortega-uzquiaga-598a40212_ml-kaggle-alexnet-activity-7161316121550237697-JS-P?utm_source=share&utm_medium=member_desktop",
+    //   title: "Playing with Deep Learning tools",
+    //   description:
+    //     "From when I found a no-code tool that nearly overcame the State of the Art in Image Classification.🌟",
+    //   photo: pistachios
+    // },
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -357,7 +402,7 @@ const podcastSection = {
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
-    "Discuss a project or just want to say hi? My Inbox is always open for you!",
+    "Want to discuss a project or just say hi? My Inbox is always open for you!",
   //number: "+92-0000000000",
   email_address: "jonortega20@gmail.com"
 };

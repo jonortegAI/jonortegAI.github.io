@@ -6,7 +6,7 @@ import StyleContext from "../../contexts/StyleContext";
 import {
   greeting,
   workExperiences,
-  skillsSection,
+  //skillsSection,
   openSource,
   bigProjects,
   blogSection,
@@ -53,7 +53,7 @@ function Header() {
           )}
           {viewBigProjects && (
             <li>
-              <a href="#projects">Big Projects</a>
+              <a href="#projects">Main Projects</a>
             </li>
           )}
           {viewAchievement && (
@@ -63,7 +63,7 @@ function Header() {
           )}
           {viewBlog && (
             <li>
-              <a href="#blogs">Blogs</a>
+              <a href="#blogs">Some Posts</a>
             </li>
           )}
           {viewTalks && (

@@ -1,7 +1,7 @@
 import React from "react";
 import "./BlogCard.scss";
 
-export default function BlogCard({blog, isDark}) {
+export default function BlogCard({ blog, isDark }) {
   function openUrlInNewTab(url, name) {
     if (!url) {
       console.log(`URL for ${name} not found`);
@@ -14,22 +14,29 @@ export default function BlogCard({blog, isDark}) {
   return (
     <div onClick={() => openUrlInNewTab(blog.url, blog.title)}>
       <div className={isDark ? "blog-container dark-mode" : "blog-container"}>
-        <a
+        <div
           className={
             isDark ? "dark-mode blog-card blog-card-shadow" : "blog-card"
           }
-          href="#blog"
         >
-          <h3 className={isDark ? "small-dark blog-title" : "blog-title"}>
-            {blog.title}
-          </h3>
-          <p className={isDark ? "small-dark small" : "small"}>
-            {blog.description}
-          </p>
-          <div className="go-corner">
-            <div className="go-arrow">→</div>
+          <div className="blog-text-container">
+            <h3 className={isDark ? "small-dark blog-title" : "blog-title"}>
+              {blog.title}
+            </h3>
+            <p className={isDark ? "small-dark small" : "small"}>
+              {blog.description}
+            </p>
           </div>
-        </a>
+          {blog.image && (
+            <div className="blog-image-container">
+              <img
+                src={blog.image}
+                alt={`Cover for ${blog.title}`}
+                className="blog-image"
+              />
+            </div>
+          )}
+        </div>
       </div>
     </div>
   );
