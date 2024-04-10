@@ -49,13 +49,9 @@ const skillsSection = {
   title: "What I do",
   subTitle: "BUILDING COOL STUFF WITH DATA AND AI",
   skills: [
-    emoji(
-      "⚡ Analyze data and create models to solve real-world problems"
-    ),
+    emoji("⚡ Analyze data and create models to solve real-world problems"),
     emoji("⚡ Create and deploy Generative AI models"),
-    emoji(
-      "⚡ Implement the created models to final EdTech products"
-    )
+    emoji("⚡ Implement the created models to final EdTech products")
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -90,7 +86,6 @@ https://fontawesome.com/icons?d=gallery */
   display: true // Set false to hide this section, defaults to true
 };
 
-
 // Your top 3 proficient stacks/tech experience
 
 const techStack = {
@@ -111,7 +106,6 @@ const techStack = {
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
 };
-
 
 // Education Section
 
@@ -139,7 +133,6 @@ const educationInfo = {
     }
   ]
 };
-
 
 // Work experience section
 
@@ -199,47 +192,45 @@ const openSource = {
 
 const bigProjects = {
   title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED WITH THEIR TECH, DATA AND AI STRATEGIES",
+  subtitle:
+    "SOME STARTUPS AND COMPANIES THAT I HELPED WITH THEIR TECH, DATA AND AI STRATEGIES",
   projects: [
     {
       image: "./assets/images/waixoLogo.png",
       projectName: "Waixo rapports",
-      projectDesc: "Creating cloth rapports from an image using Stable Diffusion and Dall-E for inpainting of empty spaces.",
-      footerLink: [
-        { name: "View Project", url: "https://waixo.example.com/" }
-      ]
+      projectDesc:
+        "Creating cloth rapports from an image using Stable Diffusion and Dall-E for inpainting of empty spaces.",
+      footerLink: [{name: "View Project", url: "https://waixo.example.com/"}]
     },
     {
       image: "./assets/images/clickersLogo.png",
       projectName: "FactorIA",
-      projectDesc: "SaaS platform integrating langchain and OpenAI API to turn all your invoices into a simple excel sheet.",
-      footerLink: [
-        { name: "View Project", url: "https://factoria.example.com/" }
-      ]
+      projectDesc:
+        "SaaS platform integrating langchain and OpenAI API to turn all your invoices into a simple excel sheet.",
+      footerLink: [{name: "View Project", url: "https://factoria.example.com/"}]
     },
     {
       image: "./assets/images/curriculumns.jfif",
       projectName: "Curriculum matching",
-      projectDesc: "Utilizing NLP, BERT fine-tuning, and cosine similarity for a model that selects the best candidates for a job offer.",
-      footerLink: [
-        { name: "View Project", url: "https://iddtek.example.com/" }
-      ]
+      projectDesc:
+        "Utilizing NLP, BERT fine-tuning, and cosine similarity for a model that selects the best candidates for a job offer.",
+      footerLink: [{name: "View Project", url: "https://iddtek.example.com/"}]
     },
     {
       image: "./assets/images/lookiero.jfif",
       projectName: "Lookiero looks",
-      projectDesc: "Implementing Graph Neural Networks (GNNs) to create looks of three clothing items.",
-      footerLink: [
-        { name: "View Project", url: "https://lookiero.example.com/" }
-      ]
+      projectDesc:
+        "Implementing Graph Neural Networks (GNNs) to create looks of three clothing items.",
+      footerLink: [{name: "View Project", url: "https://lookiero.example.com/"}]
     },
     {
       image: "./assets/images/cerebros.PNG",
       projectName: "Brain Tumor Classification",
-      projectDesc: "Applying transfer learning with Vision Transformer (ViT) to classify brain tumors.",
+      projectDesc:
+        "Applying transfer learning with Vision Transformer (ViT) to classify brain tumors.",
       footerLink: [
         // Este enlace es hipotético; reemplázalo con un enlace real si el proyecto lo tiene
-        { name: "View Project", url: "" }
+        {name: "View Project", url: ""}
       ]
     }
   ],
